@@ -302,8 +302,19 @@
 
     <!-- Phần nhạc -->
     <!-- Bạn tải 1 bài nhạc rồi copy vào thư mục music và thay đổi tên bài hát ở bên dưới -->
-    <audio id="player" autoplay loop>
-      <source src="./music/music.mp3" type="audio/mp3" />
-    </audio>
+    <div>
+      <!-- <audio width="100%" height="100%" loop muted id="autoplay">
+        <source src="./music/music.mp3" type="audio/mp3" />
+      </audio> -->
+      <audio width="100%" height="100%" loop muted autoplay id="autoplay">
+        <source src="./music/music.mp4" type="video/mp4" />
+      </audio>
+    </div>
+    <script>
+      window.onload = function () {
+        document.getElementById("autoplay").play();
+        console.log("window load");
+      };
+    </script>
   </body>
 </html>
